@@ -389,6 +389,116 @@ h1:hover .g-letter {
   text-transform: uppercase;
 }
 
+/* ── PAIN POINT ── */
+#pain {
+  padding: 6rem 2rem;
+  background: var(--bg);
+  position: relative;
+  border-top: 1px solid rgba(255, 45, 120, 0.15);
+}
+
+#pain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(255,45,120,0.05), transparent 70%);
+  pointer-events: none;
+}
+
+.pain-intro {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 4rem;
+}
+
+.pain-headline {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.pain-red {
+  color: var(--accent4);
+  text-shadow: 0 0 30px rgba(255, 45, 120, 0.5);
+}
+
+.pain-sub {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.pain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto 3.5rem;
+}
+
+.pain-card {
+  background: rgba(255, 45, 120, 0.03);
+  border: 1px solid rgba(255, 45, 120, 0.12);
+  border-radius: 10px;
+  padding: 1.75rem;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.pain-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent4), transparent);
+  border-radius: 10px 10px 0 0;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.pain-card:hover {
+  border-color: rgba(255, 45, 120, 0.35);
+  background: rgba(255, 45, 120, 0.06);
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(255, 45, 120, 0.1);
+}
+
+.pain-card:hover::before { opacity: 1; }
+
+.pain-icon {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.pain-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.pain-card p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.pain-cta {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.pain-cta p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
 /* ── SERVICES ── */
 #services {
   padding: 6rem 2rem;
