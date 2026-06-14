@@ -698,7 +698,7 @@ h2 {
 
 /* ── SPECIALITIES ── */
 #specialities {
-  padding: 6rem 2rem;
+  padding: 5rem 2rem;
   background: var(--bg2);
   position: relative;
 }
@@ -714,128 +714,118 @@ h2 {
   pointer-events: none;
 }
 
-.specialities-grid {
+.spec-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.spec-tag {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  padding: 0.55rem 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0,255,157,0.18);
+  background: rgba(0,255,157,0.04);
+  color: var(--text);
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.spec-tag:hover {
+  border-color: rgba(0,255,157,0.5);
+  background: rgba(0,255,157,0.1);
+  color: var(--accent3);
+  transform: translateY(-2px);
+  box-shadow: 0 0 16px rgba(0,255,157,0.12);
+}
+
+.spec-tag--hot {
+  border-color: rgba(0,212,255,0.25);
+  background: rgba(0,212,255,0.05);
+}
+
+.spec-tag--hot:hover {
+  border-color: rgba(0,212,255,0.6);
+  background: rgba(0,212,255,0.1);
+  color: var(--accent);
+  box-shadow: 0 0 16px rgba(0,212,255,0.15);
+}
+
+/* ── BUILT PROJECTS ── */
+#projects {
+  padding: 5rem 2rem;
+  background: var(--bg);
+  position: relative;
+}
+
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  max-width: 1100px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.spec-card {
-  background: rgba(0,255,157,0.02);
-  border: 1px solid rgba(0,255,157,0.12);
-  border-radius: 12px;
-  padding: 2.5rem 2rem;
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.02);
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
-  transition: all 0.3s;
 }
 
-.spec-card::before {
+.project-card::before {
   content: '';
   position: absolute;
-  top: 8px; left: 8px;
-  width: 14px; height: 14px;
-  border-top: 2px solid var(--accent3);
-  border-left: 2px solid var(--accent3);
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
   opacity: 0.5;
-  transition: all 0.3s;
+  transition: opacity 0.3s;
 }
 
-.spec-card::after {
-  content: '';
-  position: absolute;
-  bottom: 8px; right: 8px;
-  width: 14px; height: 14px;
-  border-bottom: 2px solid var(--accent3);
-  border-right: 2px solid var(--accent3);
-  opacity: 0.5;
-  transition: all 0.3s;
+.project-card:hover {
+  border-color: rgba(123,47,255,0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(123,47,255,0.12);
 }
 
-.spec-card:hover {
-  border-color: rgba(0,255,157,0.4);
-  transform: translateY(-4px);
-  box-shadow: 0 0 40px rgba(0,255,157,0.12);
-  background: rgba(0,255,157,0.04);
-}
+.project-card:hover::before { opacity: 1; }
 
-.spec-card:hover::before,
-.spec-card:hover::after {
-  width: 22px; height: 22px;
-  opacity: 1;
-}
+.project-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
 
-.spec-card--featured {
-  border-color: rgba(0,255,157,0.3);
-  background: rgba(0,255,157,0.04);
-}
-
-.spec-number {
-  font-family: var(--mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  color: var(--accent3);
-  opacity: 0.5;
-  margin-bottom: 1rem;
-}
-
-.spec-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.spec-card h3 {
-  font-size: 1.15rem;
+.project-card h3 {
+  font-size: 0.95rem;
   font-weight: 700;
-  margin-bottom: 0.85rem;
-  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
   color: var(--text);
 }
 
-.spec-card p {
+.project-card p {
+  font-size: 0.82rem;
   color: var(--muted);
-  font-size: 0.88rem;
-  line-height: 1.75;
-  margin-bottom: 1.25rem;
+  line-height: 1.6;
 }
 
-.spec-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.spec-list li {
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  color: var(--accent3);
-  letter-spacing: 0.04em;
-  padding-left: 1rem;
-  position: relative;
-}
-
-.spec-list li::before {
-  content: '›';
-  position: absolute;
-  left: 0;
-  opacity: 0.6;
-}
-
-.spec-badge {
+.project-label {
   display: inline-block;
-  margin-top: 1.5rem;
+  margin-top: 0.85rem;
   font-family: var(--mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 0.25rem 0.75rem;
+  padding: 0.2rem 0.55rem;
   border-radius: 4px;
-  color: var(--accent3);
-  background: rgba(0,255,157,0.08);
-  border: 1px solid rgba(0,255,157,0.25);
+  color: var(--accent2);
+  background: rgba(123,47,255,0.08);
+  border: 1px solid rgba(123,47,255,0.2);
 }
 
 /* ── MARKETING URGENCY BANNER ── */
