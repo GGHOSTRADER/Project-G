@@ -12,23 +12,56 @@
 </head>
 <body>
 
+  <!-- DATA TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>SYS_STATUS: ONLINE</span><span class="sep"> // </span>
+      <span>AGENTS_ACTIVE: 247</span><span class="sep"> // </span>
+      <span>UPTIME: 99.97%</span><span class="sep"> // </span>
+      <span>INTELLIGENCE_LAYER: DEPLOYED</span><span class="sep"> // </span>
+      <span>LATENCY: 12ms</span><span class="sep"> // </span>
+      <span>TASKS_COMPLETED: 1,402,881</span><span class="sep"> // </span>
+      <span>PROJECT_G: ACTIVE</span><span class="sep"> // </span>
+      <span>NEURAL_CORES: 64</span><span class="sep"> // </span>
+      <span>THREAT_LEVEL: ZERO</span><span class="sep"> // </span>
+      <span>ENCRYPTION: AES-256</span><span class="sep"> // </span>
+      <!-- duplicate for seamless loop -->
+      <span>SYS_STATUS: ONLINE</span><span class="sep"> // </span>
+      <span>AGENTS_ACTIVE: 247</span><span class="sep"> // </span>
+      <span>UPTIME: 99.97%</span><span class="sep"> // </span>
+      <span>INTELLIGENCE_LAYER: DEPLOYED</span><span class="sep"> // </span>
+      <span>LATENCY: 12ms</span><span class="sep"> // </span>
+      <span>TASKS_COMPLETED: 1,402,881</span><span class="sep"> // </span>
+      <span>PROJECT_G: ACTIVE</span><span class="sep"> // </span>
+      <span>NEURAL_CORES: 64</span><span class="sep"> // </span>
+      <span>THREAT_LEVEL: ZERO</span><span class="sep"> // </span>
+      <span>ENCRYPTION: AES-256</span><span class="sep"> // </span>
+    </div>
+  </div>
+
   <!-- NAV -->
   <nav>
     <span class="nav-logo">PROJECT_G</span>
     <ul class="nav-links">
       <li><a href="#hero">Home</a></li>
       <li><a href="#services">Services</a></li>
+      <li><a href="#specialities">Specialities</a></li>
+      <li><a href="#showreel">Tech</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- HERO -->
   <section id="hero">
+    <canvas id="matrix-canvas"></canvas>
     <div class="grid-bg"></div>
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
 
-    <p class="hero-eyebrow">Agentic Intelligence Deployment</p>
+    <p class="hero-eyebrow">
+      <span class="type-text" data-text="> AGENTIC INTELLIGENCE DEPLOYMENT // SYSTEM ONLINE"></span>
+      <span class="cursor"></span>
+    </p>
 
     <h1>
       The Future<br />
@@ -72,7 +105,11 @@
     </div>
 
     <div class="services-grid">
+
       <div class="card reveal">
+        <div class="card-inner"></div>
+        <div class="card-inner-bl"></div>
+        <div class="card-glow"></div>
         <div class="card-icon icon-blue">🤖</div>
         <h3>Autonomous Agent Deployment</h3>
         <p>
@@ -83,6 +120,9 @@
       </div>
 
       <div class="card reveal">
+        <div class="card-inner"></div>
+        <div class="card-inner-bl"></div>
+        <div class="card-glow"></div>
         <div class="card-icon icon-purple">🧠</div>
         <h3>Intelligence Architecture</h3>
         <p>
@@ -93,6 +133,9 @@
       </div>
 
       <div class="card reveal">
+        <div class="card-inner"></div>
+        <div class="card-inner-bl"></div>
+        <div class="card-glow"></div>
         <div class="card-icon icon-green">⚡</div>
         <h3>Workflow Automation</h3>
         <p>
@@ -103,6 +146,9 @@
       </div>
 
       <div class="card reveal">
+        <div class="card-inner"></div>
+        <div class="card-inner-bl"></div>
+        <div class="card-glow"></div>
         <div class="card-icon icon-orange">🔗</div>
         <h3>System Integration</h3>
         <p>
@@ -111,12 +157,139 @@
         </p>
         <span class="card-tag">Integration</span>
       </div>
+
+    </div>
+  </section>
+
+  <!-- SPECIALITIES -->
+  <section id="specialities">
+    <div class="section-header reveal">
+      <span class="section-tag" style="color: var(--accent3);">Deep Expertise</span>
+      <h2>Specialities</h2>
+      <p class="section-sub">
+        Three domains where Project G goes beyond automation — and into transformation.
+      </p>
+    </div>
+
+    <div class="specialities-grid">
+
+      <div class="spec-card reveal">
+        <div class="spec-number">01</div>
+        <div class="spec-icon">💬</div>
+        <h3>Consumer Interaction Platforms</h3>
+        <p>
+          We architect AI-powered consumer touchpoints that feel human but scale like machines.
+          Intelligent chatbots, voice agents, personalized recommendation engines, and
+          real-time support systems that learn from every interaction and convert at every step.
+        </p>
+        <ul class="spec-list">
+          <li>Conversational AI &amp; voice interfaces</li>
+          <li>Personalization engines</li>
+          <li>Omnichannel agent orchestration</li>
+          <li>Real-time sentiment &amp; intent analysis</li>
+        </ul>
+      </div>
+
+      <div class="spec-card reveal">
+        <div class="spec-number">02</div>
+        <div class="spec-icon">🏢</div>
+        <h3>Internal Company Communication</h3>
+        <p>
+          Transform how your organization communicates. Project G deploys AI-native
+          internal systems — intelligent knowledge bases, automated briefings, meeting
+          intelligence, and agent assistants that keep every team member aligned
+          without the noise.
+        </p>
+        <ul class="spec-list">
+          <li>AI knowledge bases &amp; internal search</li>
+          <li>Automated reporting &amp; briefings</li>
+          <li>Meeting summarization &amp; action tracking</li>
+          <li>Cross-team intelligence routing</li>
+        </ul>
+      </div>
+
+      <div class="spec-card spec-card--featured reveal">
+        <div class="spec-number">03</div>
+        <div class="spec-icon">⚙️</div>
+        <h3>Agentic Autonomous Workers</h3>
+        <p>
+          The next evolution of your workforce. We deploy always-on AI workers that
+          operate independently across your business — researching, deciding, executing,
+          and reporting. Not tools you prompt. Workers that ship.
+        </p>
+        <ul class="spec-list">
+          <li>Multi-agent task execution pipelines</li>
+          <li>Autonomous research &amp; analysis agents</li>
+          <li>Self-correcting workflow loops</li>
+          <li>Human-in-the-loop escalation protocols</li>
+        </ul>
+        <span class="spec-badge">Flagship</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- URGENCY / MARKETING BANNER -->
+  <div class="urgency-banner">
+    <span class="urgency-tag">// The Window Is Closing</span>
+    <h2 class="urgency-headline">
+      Join the Future.<br />
+      <span class="highlight">Expand With Digital Workers.</span><br />
+      Or Wait Until It's Too Late.
+    </h2>
+    <p class="urgency-sub">
+      The companies deploying <strong>autonomous AI agents today</strong> will own
+      their markets tomorrow. The ones waiting? They'll be catching up — forever.
+      Project G gives you the edge before your competitors find it.
+    </p>
+    <a href="#contact" class="btn btn-primary">Deploy Now &rarr;</a>
+  </div>
+
+  <!-- SHOWREEL -->
+  <section id="showreel">
+    <div class="section-header reveal">
+      <span class="section-tag" style="color: var(--accent3);">Built by Project G</span>
+      <h2>Tech in Action</h2>
+      <p class="section-sub">
+        Live demonstrations of intelligence systems we've designed and deployed.
+      </p>
+    </div>
+
+    <div class="video-grid">
+      <!-- Add your video files to the project folder and replace these placeholders -->
+      <!-- Example: <video src="videos/demo-1.mp4" controls muted loop playsinline></video> -->
+
+      <div class="video-card reveal">
+        <div class="video-placeholder">
+          <span>▶</span>
+          <span style="font-size:0.75rem; opacity:0.5">DEMO_01 // COMING SOON</span>
+        </div>
+        <div class="video-label">// Agent Demo 01</div>
+      </div>
+
+      <div class="video-card reveal">
+        <div class="video-placeholder">
+          <span>▶</span>
+          <span style="font-size:0.75rem; opacity:0.5">DEMO_02 // COMING SOON</span>
+        </div>
+        <div class="video-label">// Agent Demo 02</div>
+      </div>
+
+      <div class="video-card reveal">
+        <div class="video-placeholder">
+          <span>▶</span>
+          <span style="font-size:0.75rem; opacity:0.5">DEMO_03 // COMING SOON</span>
+        </div>
+        <div class="video-label">// Agent Demo 03</div>
+      </div>
+
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
     <div class="cta-banner reveal">
+      <div class="cta-corner"></div>
       <h2>Ready to Deploy?</h2>
       <p>
         Tell us what you're building. We'll design the intelligence layer
