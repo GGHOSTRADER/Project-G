@@ -50,6 +50,24 @@
   setTimeout(type, 600);
 })();
 
+/* ── SPECIALITIES FLOW ── */
+document.querySelectorAll('.layer-header').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const layer = btn.closest('.flow-layer');
+    layer.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', layer.classList.contains('is-open'));
+  });
+});
+
+document.querySelectorAll('.item-header').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.flow-item');
+    const wasOpen = item.classList.contains('is-open');
+    item.closest('.layer-items').querySelectorAll('.flow-item').forEach(i => i.classList.remove('is-open'));
+    if (!wasOpen) item.classList.add('is-open');
+  });
+});
+
 /* ── SCROLL REVEAL ── */
 const observer = new IntersectionObserver(
   entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),

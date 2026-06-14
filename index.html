@@ -215,20 +215,185 @@
     <div class="section-header reveal">
       <span class="section-tag" style="color: var(--accent3);">Deep Expertise</span>
       <h2>Specialities</h2>
+      <p class="section-sub">Click any layer to explore. Click any capability to see detail.</p>
     </div>
 
-    <div class="spec-tags reveal">
-      <div class="spec-tag">💬 Consumer Interaction Platforms</div>
-      <div class="spec-tag">🏢 Internal Company Communication</div>
-      <div class="spec-tag spec-tag--hot">⚙️ Agentic Autonomous Workers</div>
-      <div class="spec-tag">🧬 Deep Learning &amp; ML Systems</div>
-      <div class="spec-tag">☁️ Cloud Deployment</div>
-      <div class="spec-tag">📱 WhatsApp &amp; Telegram Integrations</div>
-      <div class="spec-tag">🔄 Full Data Pipelines</div>
-      <div class="spec-tag">🧠 Decision Making Models</div>
-      <div class="spec-tag spec-tag--hot">🤖 Action-Taking Agents</div>
-      <div class="spec-tag">🗄️ Database &amp; Data Extraction Design</div>
-      <div class="spec-tag spec-tag--hot">⚡ Agent Harness Engineering</div>
+    <div class="spec-flow reveal">
+
+      <!-- LAYER 1 -->
+      <div class="flow-layer" data-color="blue">
+        <button class="layer-header" aria-expanded="false">
+          <div class="layer-meta">
+            <span class="layer-tag">Layer 01</span>
+            <span class="layer-name">Foundation</span>
+            <span class="layer-desc">The infrastructure that powers everything above it</span>
+          </div>
+          <div class="layer-right">
+            <span class="layer-count">4 capabilities</span>
+            <span class="layer-chevron">+</span>
+          </div>
+        </button>
+        <div class="layer-items">
+          <div class="flow-item">
+            <button class="item-header">
+              <span class="item-icon">☁️</span>
+              <span class="item-name">Cloud Deployment</span>
+              <span class="item-chevron">›</span>
+            </button>
+            <div class="item-detail">AWS, GCP &amp; Azure infrastructure. Containerized agent deployment via Docker &amp; Kubernetes. Auto-scaling, uptime monitoring, and secure CI/CD pipelines.</div>
+          </div>
+          <div class="flow-item">
+            <button class="item-header">
+              <span class="item-icon">🗄️</span>
+              <span class="item-name">Database &amp; Data Extraction Design</span>
+              <span class="item-chevron">›</span>
+            </button>
+            <div class="item-detail">Relational &amp; vector database architecture. Web scraping and structured extraction pipelines. Schema design for AI-native applications and ETL infrastructure.</div>
+          </div>
+          <div class="flow-item">
+            <button class="item-header">
+              <span class="item-icon">🔄</span>
+              <span class="item-name">Full Data Pipelines</span>
+              <span class="item-chevron">›</span>
+            </button>
+            <div class="item-detail">Ingestion, transformation and enrichment at scale. Real-time and batch processing. Data lake and warehouse architecture with end-to-end observability.</div>
+          </div>
+          <div class="flow-item">
+            <button class="item-header">
+              <span class="item-icon">⚡</span>
+              <span class="item-name">Agent Harness Engineering</span>
+              <span class="item-chevron">›</span>
+            </button>
+            <div class="item-detail">Custom agent runtime and execution frameworks. Tool registration, memory and context management. Multi-agent coordination layers with observability and eval systems.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-connector">
+        <span class="connector-line"></span>
+        <span class="connector-label">feeds into</span>
+        <span class="connector-line"></span>
+      </div>
+
+      <!-- LAYER 2 -->
+      <div class="flow-layer" data-color="purple">
+        <button class="layer-header" aria-expanded="false">
+          <div class="layer-meta">
+            <span class="layer-tag">Layer 02</span>
+            <span class="layer-name">Intelligence</span>
+            <span class="layer-desc">Models that learn, reason and decide</span>
+          </div>
+          <div class="layer-right">
+            <span class="layer-count">2 capabilities</span>
+            <span class="layer-chevron">+</span>
+          </div>
+        </button>
+        <div class="layer-items">
+          <div class="flow-item">
+            <button class="item-header">
+              <span class="item-icon">🧬</span>
+              <span class="item-name">Deep Learning &amp; ML Systems</span>
+              <span class="item-chevron">›</span>
+            </button>
+            <div class="item-detail">Custom neural network design, training and productionization. Computer vision and NLP pipelines. Model fine-tuning, domain adaptation and production inference deployment.</div>
+          </div>
+          <div class="flow-item">
+            <button class="item-header">
+              <span class="item-icon">🧠</span>
+              <span class="item-name">Decision Making Models</span>
+              <span class="item-chevron">›</span>
+            </button>
+            <div class="item-detail">Predictive and prescriptive analytics engines. Risk scoring and classification at scale. Real-time inference with explainable AI outputs for business-critical decisions.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-connector">
+        <span class="connector-line"></span>
+        <span class="connector-label">powers</span>
+        <span class="connector-line"></span>
+      </div>
+
+      <!-- LAYER 3 -->
+      <div class="flow-layer" data-color="green">
+        <button class="layer-header" aria-expanded="false">
+          <div class="layer-meta">
+            <span class="layer-tag">Layer 03</span>
+            <span class="layer-name">Automation</span>
+            <span class="layer-desc">Agents that act, execute and self-correct</span>
+          </div>
+          <div class="layer-right">
+            <span class="layer-count">2 capabilities</span>
+            <span class="layer-chevron">+</span>
+          </div>
+        </button>
+        <div class="layer-items">
+          <div class="flow-item">
+            <button class="item-header">
+              <span class="item-icon">⚙️</span>
+              <span class="item-name">Agentic Autonomous Workers</span>
+              <span class="item-chevron">›</span>
+            </button>
+            <div class="item-detail">Always-on AI workers that operate independently — researching, deciding and executing. Multi-agent task pipelines with self-correcting loops and human-in-the-loop escalation.</div>
+          </div>
+          <div class="flow-item">
+            <button class="item-header">
+              <span class="item-icon">🤖</span>
+              <span class="item-name">Action-Taking Agents</span>
+              <span class="item-chevron">›</span>
+            </button>
+            <div class="item-detail">Agents that browse, click and execute real-world tasks. API and tool-use orchestration. Goal-driven autonomous task loops with full system interaction and control.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-connector">
+        <span class="connector-line"></span>
+        <span class="connector-label">deployed through</span>
+        <span class="connector-line"></span>
+      </div>
+
+      <!-- LAYER 4 -->
+      <div class="flow-layer" data-color="pink">
+        <button class="layer-header" aria-expanded="false">
+          <div class="layer-meta">
+            <span class="layer-tag">Layer 04</span>
+            <span class="layer-name">Interfaces</span>
+            <span class="layer-desc">How humans and systems interact with the intelligence</span>
+          </div>
+          <div class="layer-right">
+            <span class="layer-count">3 capabilities</span>
+            <span class="layer-chevron">+</span>
+          </div>
+        </button>
+        <div class="layer-items">
+          <div class="flow-item">
+            <button class="item-header">
+              <span class="item-icon">💬</span>
+              <span class="item-name">Consumer Interaction Platforms</span>
+              <span class="item-chevron">›</span>
+            </button>
+            <div class="item-detail">AI-powered touchpoints that feel human but scale like machines. Conversational AI, voice agents, personalization engines and omnichannel orchestration.</div>
+          </div>
+          <div class="flow-item">
+            <button class="item-header">
+              <span class="item-icon">🏢</span>
+              <span class="item-name">Internal Company Communication</span>
+              <span class="item-chevron">›</span>
+            </button>
+            <div class="item-detail">AI-native internal systems — intelligent knowledge bases, automated briefings, meeting intelligence and agent assistants that keep every team aligned.</div>
+          </div>
+          <div class="flow-item">
+            <button class="item-header">
+              <span class="item-icon">📱</span>
+              <span class="item-name">WhatsApp &amp; Telegram Integrations</span>
+              <span class="item-chevron">›</span>
+            </button>
+            <div class="item-detail">AI agents deployed directly inside chat. Automated notifications, two-way conversational workflows and full Business API infrastructure.</div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
